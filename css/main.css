@@ -1,0 +1,413 @@
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+img {width: 100%;}
+.p-70 {padding: 70px 0 ;}
+#btnTop 
+{
+    position: fixed ;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    border: none;
+    background-color: #81818149;
+    color: #09c;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.headerFixed
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -85px;
+    z-index: 1000;
+    background-color: #81818149 ;
+    transform: translateY(85px);
+    transition: all 0.3s;
+}
+header {position: absolute; z-index: 1000000000;right: 0; left: 0;}
+* {font-family: "poppins";}
+header nav .nav-item 
+{
+    font-size: 18px;
+}
+
+header nav a {color: #fff !important;}
+
+.slider 
+{
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.slider .grey {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000070;
+    z-index: 1000000;
+}
+.slider .animated-head{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider h5 {
+    color: #fff;
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.slider h1 {color: #fff;font-size: 50px;}
+.slider .animated-head h1::after{
+    content: " ";
+    animation: animatedName 5s infinite ;
+}
+
+@keyframes animatedName {
+    0% {content: " N";}
+    10% {content: " Na";}
+    20% {content: " Nad";}
+    30% {content: " Nade";}
+    40% {content: " Nader";}
+    50% {content: " Nade";}
+    60% {content: " Nad";}
+    70% {content: " Na";}
+    80% {content: " Nd";}
+    90% {content: " N";}
+    100% {content: " ";}
+}
+
+.slider .social {width: 20%;text-align: center;margin: auto;}
+.slider .social ul li {
+    list-style: none;
+    width: 20%;
+    float: left;
+}
+
+.slider .social a 
+{
+    color: #fff;
+}
+  
+/* start about sec  */
+.about h3 {font-size: 35px;font-weight: 400;}
+.about .about-p
+{
+    color: grey;
+    margin: 20px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.about #about-p 
+{
+    color: grey;
+    font-size: 18px;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
+
+.bar-parent
+{
+    width: 100%;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.452);
+    display: flex;
+    align-items: left;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.bar-parent .bar-web 
+{
+    width: 95%;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.bar-parent span {margin: 0 10px;}
+
+
+.bar-parent .bar-branding 
+{
+    width: 80%;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.bar-parent .bar-develop 
+{
+    width: 90%;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.about .btns button{margin: 20px;}
+.about .btns .btn-light {border: 1px solid ;}
+/* end about sec  */
+
+
+/* start servieces sec */
+.services 
+{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.services h3 {font-weight: 900;}
+.services .parent {margin: 20px 0;}
+.services .content {padding: 20px 0;background-color: #fff;}
+.services .content i
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.26);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .3s;
+    font-size: 18px;
+}
+
+.services .parent:hover i 
+{
+    color: #fff;
+    background-color: #000;
+}
+
+.services .content h6 
+{
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.services .content p 
+{
+    line-height: 1.9;
+    color: grey;
+}
+/* end servieces sec */
+
+/* start Portfolio. */
+.Portfolio {text-align: center;}
+.Portfolio h3 {
+    font-weight: 900;
+}
+
+.Portfolio ul {list-style: none;margin: 50px 0;}
+
+.Portfolio button {
+    border: none;
+    background-color: transparent;
+}
+
+.Portfolio .parent{position: relative;transition: all .5s; margin: 30px 0;}
+.Portfolio .overlay 
+{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffaf;
+    display: none;
+    transition: all .5s;
+}
+
+.Portfolio .parent:hover .overlay{
+    display: flex;
+}
+.Portfolio i {font-size: 18px;margin: 20px 0;}
+/* end Portfolio. */
+
+
+/* start testimonials */
+.testimonials 
+{
+    background-color: rgba(128, 128, 128, 0.089);
+    text-align: center;
+}
+
+.testimonials h3 {font-weight: 900;}
+.testimonials .item{margin: 30px 0;}
+.testimonials .item p
+{
+    margin: 30px 0;
+    letter-spacing: 2px;
+}
+.testimonials .slider-img 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+/* end testimonials */
+
+
+/* start counter */
+
+.counters 
+{
+    display: block;
+    text-align: center;
+}
+
+.counters span
+{
+    display: block;
+    margin: 30px 0;
+}
+
+.counters .num 
+{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.counters i {font-size: 30px;}
+
+.counters .data 
+{
+    font-weight: 900;
+}
+/* end counter */
+
+/* start team */
+.team
+{
+    text-align: center;
+    background-color: #F8F9FA;
+}
+
+.team h3 
+{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.team .row
+{
+    margin: 30px 0;
+}
+
+.team .card-body 
+{
+    background-color: #5B5B5B;
+    width: 100%;
+    color: #fff;
+}
+/* end team */
+
+/* start contact */
+.contact
+{
+    text-align: center;
+}
+
+.contact .row 
+{
+    margin: 30px 0;
+}
+
+.contact .icon
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(166, 170, 172, 0.199);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.contact h4 , h5 
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contact form 
+{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.contact form input ,.contact form textarea 
+{
+    background-color: rgba(128, 128, 128, 0.342);
+    margin: 30px 0;
+}
+
+.contact form .btn {border: none;float: left;}
+/* end contact */
+
+.footer
+{
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;  
+}
+
+@media screen and (max-width : 991px) {
+    .navbar-collapse 
+    {
+        background-color: rgba(128, 128, 128, 0.534);
+        width: 100%;
+    }
+
+    .navbar-collapse .nav-link 
+    {
+        margin:  20px;
+    }
+
+    .slider .social
+    {
+        display: none;
+    }
+
+    .about .achild
+    {
+        margin: 50px 0;
+    }
+
+    .about .btns {
+        text-align: center;
+    }
+
+    .team .child
+    {
+        margin: 30px 0;
+    }
+}
